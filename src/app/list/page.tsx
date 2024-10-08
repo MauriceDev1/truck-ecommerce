@@ -1,7 +1,7 @@
-import Filter from '@/components/Filter'
-import ProductList from '@/components/ProductList'
-import Image from 'next/image'
-import React from 'react'
+import Filter from '@/components/Filter';
+import ProductList from '@/components/ProductList';
+import Image from 'next/image';
+import React, { Suspense } from 'react';
 
 const ListPage = () => {
   return (
@@ -21,10 +21,14 @@ const ListPage = () => {
           <Image src="/parts-collage.png" alt="" fill className="object-contain" />
         </div>
       </div>
-      <Filter />
-      <ProductList />
+
+      {/* Wrap Filter and ProductList in Suspense */}
+      <Suspense fallback={<div>Loading products...</div>}>
+        <Filter />
+        <ProductList />
+      </Suspense>
     </div>
-  )
+  );
 }
 
-export default ListPage
+export default ListPage;
