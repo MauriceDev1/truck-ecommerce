@@ -23,7 +23,7 @@ const SearchBar = () => {
             <input type="text" name="name" placeholder="Search" className="flex-1 bg-transparent outline-none"/>
             <button className="cursor-pointer">
                 <Image 
-                    src="/Search.png"
+                    src="/search.png"
                     alt="search"
                     width={16}
                     height={16}
