@@ -31,7 +31,7 @@ const Footer = () => {
             <h1 className="font-medium text-lg">COMPANY</h1>
             <div className="flex flex-col gap-6">
               <Link href="/about">About Us</Link>
-              <Link href="">Careers</Link>
+              <Link href="/careers">Careers</Link>
               <Link href="/affiliates">Affiliates</Link>
               <Link href="/blog">Blog</Link>
               <Link href="/contact">Contact Us</Link>
@@ -71,7 +71,7 @@ const Footer = () => {
               placeholder="Email address"
               className="p-4 w-3/4"
             />
-            <button className="w-1/4 bg-lama text-white">JOIN</button>
+            <button className="w-1/4 bg-black text-white">JOIN</button>
           </div>
           <span className="font-semibold">Secure Payments</span>
           <div className="flex justify-between">
@@ -89,11 +89,11 @@ const Footer = () => {
         <div className="flex flex-col gap-8 md:flex-row">
           <div className="">
             <span className="text-gray-500 mr-4">Language</span>
-            <span className="font-medium">United States | English</span>
+            <span className="font-medium">English</span>
           </div>
           <div className="">
             <span className="text-gray-500 mr-4">Currency</span>
-            <span className="font-medium">$ USD</span>
+            <span className="font-medium">R ZAR</span>
           </div>
         </div>
       </div>

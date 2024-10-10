@@ -7,27 +7,27 @@ import { useState } from "react";
 const slides = [
     {
       id: 1,
-      title: "Summer Sale Collections",
-      description: "Sale! Up to 50% off!",
-      img: "/udtruck-GWE370.png",
+      title: "Keep Your Trucks Rolling. Genuine Parts, Expert Service.",
+      description: "Your trusted partner for truck components.",
+      img: "/iveco-s-way.png",
       url: "/",
       bg: "bg-gradient-to-r from-neutral-300 to-stone-400",
     },
     {
       id: 2,
-      title: "Winter Sale Collections",
-      description: "Sale! Up to 50% off!",
-      img: "https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=800",
+      title: "Save Big on Truck Parts. Quality Guaranteed.",
+      description: "Discover unbeatable deals on a wide range of components.",
+      img: "/Big-truck-1.png",
       url: "/",
-      bg: "bg-gradient-to-r from-pink-50 to-blue-50",
+      bg: "bg-gradient-to-r from-neutral-400 to-stone-300",
     },
     {
       id: 3,
-      title: "Spring Sale Collections",
-      description: "Sale! Up to 50% off!",
-      img: "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=800",
+      title: "South African-Owned. South African-Sourced.",
+      description: "Experience the difference of local knowledge and support.",
+      img: "/udtruck-GWE370.png",
       url: "/",
-      bg: "bg-gradient-to-r from-blue-50 to-yellow-50",
+      bg: "bg-gradient-to-r from-neutral-300 to-stone-400",
     },
   ];
 
@@ -50,7 +50,7 @@ const Slider = () => {
               <h2 className="text-xl lg:text-3xl 2xl:text-5xl">
                 {slide.description}
               </h2>
-              <h1 className="text-5xl lg:text-6xl 2xl:text-8xl font-semibold">
+              <h1 className="text-3xl lg:text-4xl 2xl:text-6xl font-semibold">
                 {slide.title}
               </h1>
               <Link href={slide.url}>
@@ -60,13 +60,14 @@ const Slider = () => {
               </Link>
             </div>
             {/* IMAGE CONTAINER */}
-            <div className="h-1/2 xl:w-1/2 xl:h-full relative">
+            <div className="h-1/2 xl:w-1/2 xl:h-full flex">
               <Image
                 src={slide.img}
                 alt=""
-                fill
-                sizes="100%"
-                className="object-cover"
+                width={1000}
+                height={1000}
+                className="w-full my-auto"
+                // className="object-cover"
               />
             </div>
           </div>

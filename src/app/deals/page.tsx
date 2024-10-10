@@ -1,5 +1,7 @@
 import ProductList from "@/components/ProductList";
+import Skeleton from "@/components/Skeleton";
 import Image from "next/image";
+import { Suspense } from "react";
 
 const Deals = () => {
     return (
@@ -16,10 +18,16 @@ const Deals = () => {
                 </button>
                 </div>
                 <div className="relative w-1/3">
-                <Image src="/woman.png" alt="" fill className="object-contain" />
+                <Image src="/cluster_1.png" alt="" fill className="object-contain" />
                 </div>
             </div>
-            <ProductList />
+            <h1 className="mt-12 text-xl font-semibold">Deals of the Month</h1>
+            <Suspense fallback={<Skeleton />}>
+                <ProductList
+                    categoryId={process.env.FEATURED_PRODUCTS_NEW_CATEGORY_ID!}
+                    limit={4}
+                />
+            </Suspense>
         </div>
     )
 }

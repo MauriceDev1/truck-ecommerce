@@ -1,12 +1,12 @@
 const About = () => {
     return (
         <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative">
-            <h1 className="text-2xl mt-5">
-                About Us
-            </h1>
             <div className="w-full py-16 flex gap-8">
                 <div className="w-2/3">
-                    <p className="text-lg">
+                    <h1 className="text-2xl mb-5">
+                        About Us
+                    </h1>
+                    <p>
                         At Mo Parts, we understand the high cost of maintaining a fleet of trucks firsthand. While managing a logistics company and running a fleet, we saw the constant demand for quality truck parts. Too often, businesses face the difficult choice between expensive new parts or unreliable, low-grade aftermarket options. That&#39;s why we created Mo Parts to offer a better, more affordable solution.
                         <br />
                         <br />
